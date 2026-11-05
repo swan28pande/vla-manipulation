@@ -1,0 +1,12 @@
+vision_model: google/vit-base-patch16-224-in21k
+text_model: distilbert-base-uncased
+pretrained: false        # set true to download HF weights
+freeze_encoders: true
+hidden_dim: 256
+action_dim: 7
+image_size: 224
+batch_size: 8
+epochs: 2
+lr: 3.0e-4
+data_dir: null           # path to .npz episodes; null -> synthetic
+checkpoint: checkpoints/vla.pt
